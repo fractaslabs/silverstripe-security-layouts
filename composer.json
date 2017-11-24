@@ -1,0 +1,24 @@
+{
+    "name": "fractas/security-layouts",
+    "description": "SilverStripe module for fancier security layouts (login/lost password etc.)",
+    "type": "silverstripe-module",
+    "homepage": "https://github.com/fractaslabs/silverstripe-security-layouts",
+    "keywords": ["silverstripe", "CMS", "security", "login"],
+    "license": "BSD-3-Clause",
+    "support": {
+        "issues": "https://github.com/fractaslabs/silverstripe-security-layouts/issues"
+    },
+    "authors": [{
+        "name": "Milan Jelicanin",
+        "email": "milan.jelicanin@fractas.com",
+        "homepage": "https://www.fractas.com/"
+    }, {
+        "name": "Petar Simic",
+        "email": "petar.simic@fractas.com",
+        "homepage": "https://www.fractas.com/"
+    }],
+    "require": {
+        "silverstripe/cms": "~3",
+        "silverstripe/framework": "~3"
+    }
+}

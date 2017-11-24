@@ -1,0 +1,15 @@
+---
+Name: security-layouts
+After:
+  - 'framework/*'
+  - 'cms/*'
+---
+
+Page_Controller:
+  extensions:
+    - Fractas\SecurityForm\SecurityFormController
+
+# Fractas\SecurityForm\SecurityFormController:
+#   company_logo: 'appboiler/images/logo.svg'
+#   company_name: 'Fractas'
+#   company_link: 'http://fractas.com'
