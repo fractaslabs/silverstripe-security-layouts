@@ -1,0 +1,2 @@
+mappings:
+  SecurityFormController: Fractas\SecurityForm\SecurityFormController

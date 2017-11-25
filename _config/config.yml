@@ -5,11 +5,11 @@ After:
   - 'cms/*'
 ---
 
-Page_Controller:
+SilverStripe\CMS\Controllers\ContentController:
   extensions:
     - Fractas\SecurityForm\SecurityFormController
 
 # Fractas\SecurityForm\SecurityFormController:
-#   company_logo: 'appboiler/images/logo.svg'
-#   company_name: 'Fractas'
-#   company_link: 'http://fractas.com'
+#   company_logo: 'path/to/logo.svg' # path to project or company logo
+#   company_name: 'ACME' # name of company or project
+#   company_link: 'http://www.example.com' # project or company link

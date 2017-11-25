@@ -8,13 +8,13 @@
 SilverStripe module for fancier security layouts (login/lost password etc.)
 
 ## Requirements
-- SilverStripe CMS 3+
-- SilverStripe Framework 3+
+- SilverStripe CMS 4+
+- SilverStripe Framework 4+
 
 ## Installation & Usage
 - Install via Composer
   ```
-  composer require "fractas/security-layouts" "^1.0"
+  composer require "fractas/security-layouts" "2.0.x-dev"
   ```
 - Add to your config.yml file:
 ```yml
@@ -25,10 +25,17 @@ SilverStripe module for fancier security layouts (login/lost password etc.)
 ```
 - Run dev/build
 
+## Screenshoots
+
+![Security Layout Log In](https://github.com/fractaslabs/silverstripe-security-layouts/blob/master/docs/images/security-layout-log-in.jpg)
+![Security Layout Lost Password](https://github.com/fractaslabs/silverstripe-security-layouts/blob/master/docs/images/security-layout-lost-password.jpg)
+![Security Layout Password Sent](https://github.com/fractaslabs/silverstripe-security-layouts/blob/master/docs/images/security-layout-password-sent.jpg)
+
+
 ## Bugtracker
 
 Bugs are tracked on [github.com](https://github.com/fractaslabs/silverstripe-security-layouts/issues)
 
 ## Licence
 
-- See [Licence](https://github.com/fractaslabs/silverstripe-security-layouts/blob/master/LICENSE)
+See [Licence](https://github.com/fractaslabs/silverstripe-security-layouts/blob/master/LICENSE)

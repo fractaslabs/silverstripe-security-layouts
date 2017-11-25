@@ -2,9 +2,9 @@
 
 namespace Fractas\SecurityForm;
 
-use Config;
-use Extension;
-use Requirements;
+use SilverStripe\Core\Config\Config;
+use SilverStripe\Core\Extension;
+use SilverStripe\View\Requirements;
 
 /**
  * Class Fractas\SecurityForm\SecurityFormController.
@@ -17,18 +17,18 @@ class SecurityFormController extends Extension
     private static $company_name;
     private static $company_link;
 
-    /**
-     * @return mixed
-     */
     public function SecurityAssetsDir()
     {
         return SECURITY_DIR;
     }
 
+    /**
+     * Clears all Requirements and adds a custom CSS
+     */
     public function ClearRequirements()
     {
         Requirements::clear();
-        Requirements::css($this->owner->SecurityAssetsDir().'/css/security.min.css');
+        Requirements::css('fractas/security-layouts:client/dist/styles/security.min.css');
     }
 
     /**
