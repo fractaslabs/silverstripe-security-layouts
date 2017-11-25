@@ -1,4 +1,8 @@
 # SilverStripe security layouts
+[![Latest Stable Version](https://poser.pugx.org/fractas/security-layouts/v/stable)](https://packagist.org/packages/fractas/security-layouts)
+[![Latest Unstable Version](https://poser.pugx.org/fractas/security-layouts/v/unstable)](https://packagist.org/packages/fractas/security-layouts)
+[![Total Downloads](https://poser.pugx.org/fractas/security-layouts/downloads)](https://packagist.org/packages/fractas/security-layouts)
+[![License](https://poser.pugx.org/fractas/security-layouts/license)](https://packagist.org/packages/fractas/security-layouts)
 
 ## Overview
 SilverStripe module for fancier security layouts (login/lost password etc.)
@@ -15,9 +19,9 @@ SilverStripe module for fancier security layouts (login/lost password etc.)
 - Add to your config.yml file:
 ```yml
  Fractas\SecurityForm\SecurityFormController:
-   company_logo: 'appboiler/images/logo.svg'
-   company_name: 'Fractas'
-   company_link: 'http://fractas.com'
+   company_logo: 'path/to/logo.svg' # path to project or company logo
+   company_name: 'ACME' # name of company or project
+   company_link: 'http://www.example.com' # project or company link
 ```
 - Run dev/build
 
