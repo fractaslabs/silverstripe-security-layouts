@@ -17,12 +17,12 @@ SilverStripe module for fancier security layouts (login/lost password etc.)
   composer require "fractas/security-layouts" "2.0.x-dev"
   ```
 - Add to your config.yml file:
-```yml
- Fractas\SecurityForm\SecurityFormController:
-   company_logo: 'path/to/logo.svg' # path to project or company logo
-   company_name: 'ACME' # name of company or project
-   company_link: 'http://www.example.com' # project or company link
-```
+  ```yml
+   Fractas\SecurityForm\SecurityFormController:
+     company_logo: 'path/to/logo.svg' # path to project or company logo
+     company_name: 'ACME' # name of company or project
+     company_link: 'http://www.example.com' # project or company link
+  ```
 - Run dev/build
 
 ## Screenshoots
