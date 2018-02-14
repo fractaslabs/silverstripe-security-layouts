@@ -30,12 +30,16 @@ a:hover, a:focus {
 
 .container {
     display: block;
-    margin: 3em auto;
-    max-width: 28em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
 }
 
 .pre-header {
     padding: 0 1.5em 0.75em;
+    width: 28em;
 }
 
     .logo {
@@ -82,6 +86,7 @@ a:hover, a:focus {
     border-radius: 3px;
     box-shadow: 0 3px 8px 1px #c2c2c2;
     padding: 1.5em;
+    width: 28em;
 }
 
     .header {
@@ -221,3 +226,23 @@ a:hover, a:focus {
     .footer {
         padding: 0.75em 1.5em 0;
     }
+
+@media (max-width: 767px) {
+    body {
+      font-size: 14px;
+    }
+
+    .pre-header,
+    .wrapper {
+      width: 25em;
+    }
+
+    .container {
+      position: static;
+      -webkit-transform: none;
+              transform: none;
+      left: auto;
+      top: auto;
+      margin: 2em auto;
+    }
+}
