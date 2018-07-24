@@ -5,14 +5,6 @@
 		<h2><%t Security.LOGIN "Log In" %></h2>
 	</header>
 	<section class="login-block">
-		<% if currentUser %>
-			<p class="alert">
-				<%t Security.LOGGEDINAS "You're already log-in as" %>
-				<% with CurrentMember %>
-					<strong class="name">$FirstName $Surname</strong>
-				<% end_with %>
-			</p>
-		<% end_if %>
 		$Content
 		$Form
 	</section>
