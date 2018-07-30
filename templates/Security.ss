@@ -11,24 +11,24 @@
 	<body>
 		<div class="container">
 			<section class="pre-header">
-				<div class="logo">
+				<h2 class="logo">
 					<% if $SecurityCompanyLink %>
 					<a href="$SecurityCompanyLink">
 					<% else %>
 					<a href="$BaseHref">
 					<% end_if %>
 					<% if SecurityCompanyLogo %>
-						<img src="$SecurityCompanyLogo" alt="$SecurityCompanyName">
+						<img src="$SecurityCompanyLogo" alt="<% if SecurityCompanyLogo %>$SecurityCompanyName<% else %>$SiteConfig.Title<% end_if %>">
 					<% else %>
 						<span class="text-logo">$SiteConfig.Title</span>
 					<% end_if %>
 					</a>
-				</div>
+				</h2>
 			</section>
 			$Layout
-			<%-- <footer class="footer">
-				<a href="$SecurityCompanyLink" title="$SecurityCompanyName" rel="nofollow" target="_blank">$SecurityCompanyLink</a>
-			</footer> --%>
+			<footer class="footer">
+                <p class="copy">&copy; {$Now.Year}</p>
+			</footer>
 		</div>
 	</body>
 </html>

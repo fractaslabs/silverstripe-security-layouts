@@ -30,6 +30,13 @@
         },
         "expose": [
             "client/dist"
+        ],
+        "screenshoots": [
+            "docs/images/security-layout-log-in.png",
+            "docs/images/security-layout-lost-password.png",
+            "docs/images/security-layout-password-sent.png",
+            "docs/images/security-layout-log-out.png",
+            "docs/images/security-layout-log-in-logged-in.png"
         ]
     },
     "autoload": {

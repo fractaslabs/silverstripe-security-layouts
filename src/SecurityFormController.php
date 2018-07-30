@@ -4,23 +4,19 @@ namespace Fractas\SecurityForm;
 
 use SilverStripe\Core\Config\Config;
 use SilverStripe\Core\Extension;
+use SilverStripe\Core\Manifest\ModuleResourceLoader;
 use SilverStripe\View\Requirements;
 
 /**
  * Class Fractas\SecurityForm\SecurityFormController.
  *
- * @property Page_Controller $owner
+ * @property PageController $owner
  */
 class SecurityFormController extends Extension
 {
     private static $company_logo;
     private static $company_name;
     private static $company_link;
-
-    public function SecurityAssetsDir()
-    {
-        return SECURITY_DIR;
-    }
 
     /**
      * Clears all Requirements and adds a custom CSS
@@ -40,7 +36,10 @@ class SecurityFormController extends Extension
             return $o;
         }
 
-        return $this->owner->SecurityAssetsDir().'/images/logo.png';
+        $res = ModuleResourceLoader::singleton()
+            ->resourceURL('fractas/security-layouts:client/dist/images/logo.png');
+
+        return $res;
     }
 
     /**
