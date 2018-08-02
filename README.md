@@ -18,6 +18,12 @@ This module overwrites couple of _SilverStripe FormField templates_ in order to 
 - SilverStripe Framework 4+
 
 
+## Version info
+The master branch of this module is currently aiming for SilverStripe 4.x compatibility
+
+[SilverStripe 3.0+ compatible version](https://github.com/fractaslabs/silverstripe-security-layouts/tree/1.0)
+
+
 ## Installation & Usage
 - Install via Composer
   ```
