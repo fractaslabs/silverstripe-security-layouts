@@ -1,7 +1,7 @@
 {
     "name": "fractas/security-layouts",
     "description": "SilverStripe module for fancier security layouts (login/lost password etc.)",
-    "type": "silverstripe-vendormodule",
+    "type": "silverstripe-module",
     "homepage": "https://github.com/fractaslabs/silverstripe-security-layouts",
     "keywords": ["silverstripe", "CMS", "security", "login"],
     "license": "BSD-3-Clause",
@@ -20,17 +20,10 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "silverstripe/vendor-plugin": "^1.0",
-        "silverstripe/cms": "^4.0",
-        "silverstripe/framework": "^4.0"
+        "silverstripe/cms": "~3",
+        "silverstripe/framework": "~3"
     },
     "extra": {
-        "branch-alias": {
-            "dev-master": "2.0.x-dev"
-        },
-        "expose": [
-            "client/dist"
-        ],
         "screenshoots": [
             "docs/images/security-layout-log-in.png",
             "docs/images/security-layout-lost-password.png",
@@ -38,10 +31,5 @@
             "docs/images/security-layout-log-out.png",
             "docs/images/security-layout-log-in-logged-in.png"
         ]
-    },
-    "autoload": {
-        "psr-4": {
-            "Fractas\\SecurityLayouts\\": "src/"
-        }
     }
 }

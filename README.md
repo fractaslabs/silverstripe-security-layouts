@@ -10,18 +10,18 @@ Inspired by Bootstrap 4.
 
 
 ## Note
-This module overwrites couple of _SilverStripe FormField templates_ in order to style checkbox and input fields. 
+This module overwrites couple of _SilverStripe FormField templates_ in order to style checkbox and input fields.
 
 
 ## Requirements
-- SilverStripe CMS 4+
-- SilverStripe Framework 4+
+- SilverStripe CMS 3+
+- SilverStripe Framework 3+
 
 
 ## Installation & Usage
 - Install via Composer
   ```
-  composer require "fractas/security-layouts" "2.0.x-dev"
+  composer require "fractas/security-layouts" "^1.0"
   ```
 - Add to your config.yml file:
   ```yml

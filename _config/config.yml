@@ -2,7 +2,7 @@
 Name: security-layouts
 ---
 
-SilverStripe\CMS\Controllers\ContentController:
+Page_Controller:
   extensions:
     - Fractas\SecurityForm\SecurityFormController
 
